@@ -29,5 +29,6 @@ graph TD
     fs --> mt --> mr
     mr --> inf --> api
 
-## Workflow
+## Workflow Model
+
 +———––+     +––––––––+     +———––+ | Data Intake | –> | Preprocessing  | –> | Model Train | +———––+     +––––––––+     +———––+ |                 | v                 v +———–+     +–––––+ | Validate? | –> | Deploy   | +———–+     +–––––+ |                 | | No              | Yes v                 v +———–+     +–––––+ | Retrain   | <– | Monitor  | +———–+     +–––––+
