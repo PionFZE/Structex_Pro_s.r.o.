@@ -29,9 +29,9 @@ graph TD
     fs --> mt --> mr
     mr --> inf --> api
 
-## Workflow Model
-```txt
-[+-------------+     +----------------+     +-------------+
+## Workflow
+```ascii
++-------------+     +----------------+     +-------------+
 | Data Intake | --> | Preprocessing  | --> | Model Train |
 +-------------+     +----------------+     +-------------+
                                  |                 |
@@ -45,4 +45,6 @@ graph TD
                             +-----------+     +----------+
                             | Retrain   | <-- | Monitor  |
                             +-----------+     +----------+
-]
+
+```
+Cycle: Data → Training → Deployment → Monitoring.
