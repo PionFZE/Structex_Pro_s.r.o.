@@ -1,0 +1,2 @@
+architecture-beta
+  group data[Data Layer] --> model[Model Layer] --> serving[Serving Layer]
