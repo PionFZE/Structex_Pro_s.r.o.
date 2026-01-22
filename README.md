@@ -15,7 +15,7 @@ Demonstration of Architecture and Engineering for AI Core Systems by Structex Pr
 ```mermaid
 graph TD
     subgraph data_layer["Data Layer"]
-        ds[(Джерела даних)]
+        ds[(Data Sources)]
         pp[Preprocessing]
         fs[Feature Store]
     end
