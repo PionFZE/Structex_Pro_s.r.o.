@@ -1,15 +1,17 @@
-# Structex_Pro_s.r.o.
+# Structex Pro s.r.o.
 
-# AI Core System Architecture Demo
+AI Core System Architecture Demo
 
 Demonstration of Architecture and Engineering for AI Core Systems by Structex Pro
 
 ## Layers
+
 - **Data Layer**: Kafka ingestion, Feast features [web:1]
 - **Model Layer**: Kubeflow pipelines, MLflow registry
 - **Serving Layer**: KServe inference
 
 ## Diagram (Mermaid)
+
 ```mermaid
 graph TD
     subgraph data_layer["Data Layer"]
@@ -28,12 +30,3 @@ graph TD
     ds --> pp --> fs
     fs --> mt --> mr
     mr --> inf --> api
-
-## Workflow Model
-
-+———––+     +––––––––+     +———––+ | Data Intake | –> | Preprocessing  | –> | Model Train | +———––+     +––––––––+     +———––+ |                 | v                 v +———–+     +–––––+ | Validate? | –> | Deploy   | +———–+     +–––––+ |                 | | No              | Yes v                 v +———–+     +–––––+ | Retrain   | <– | Monitor  | +———–+     +–––––+
-
-
-
-
-(diagrams/architecture.mmd), [workflow](diagrams/workflow.txt), [blueprint](deliverables/blueprint.md).
