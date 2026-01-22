@@ -30,21 +30,4 @@ graph TD
     mr --> inf --> api
 
 ## Workflow
-```ascii
-+-------------+     +----------------+     +-------------+
-| Data Intake | --> | Preprocessing  | --> | Model Train |
-+-------------+     +----------------+     +-------------+
-                                 |                 |
-                                 v                 v
-                            +-----------+     +----------+
-                            | Validate? | --> | Deploy   |
-                            +-----------+     +----------+
-                                 |                 |
-                                 | No              | Yes
-                                 v                 v
-                            +-----------+     +----------+
-                            | Retrain   | <-- | Monitor  |
-                            +-----------+     +----------+
-
-```
-Cycle: Data → Training → Deployment → Monitoring.
++———––+     +––––––––+     +———––+ | Data Intake | –> | Preprocessing  | –> | Model Train | +———––+     +––––––––+     +———––+ |                 | v                 v +———–+     +–––––+ | Validate? | –> | Deploy   | +———–+     +–––––+ |                 | | No              | Yes v                 v +———–+     +–––––+ | Retrain   | <– | Monitor  | +———–+     +–––––+
