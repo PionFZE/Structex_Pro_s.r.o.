@@ -32,3 +32,8 @@ graph TD
 ## Workflow Model
 
 +———––+     +––––––––+     +———––+ | Data Intake | –> | Preprocessing  | –> | Model Train | +———––+     +––––––––+     +———––+ |                 | v                 v +———–+     +–––––+ | Validate? | –> | Deploy   | +———–+     +–––––+ |                 | | No              | Yes v                 v +———–+     +–––––+ | Retrain   | <– | Monitor  | +———–+     +–––––+
+
+
+
+
+(diagrams/architecture.mmd), [workflow](diagrams/workflow.txt), [blueprint](deliverables/blueprint.md).
