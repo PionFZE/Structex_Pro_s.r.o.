@@ -19,4 +19,4 @@ graph TD
     E --> F[Inference]
 
 ##Architecture Diagram
-![Architecture](diagrams/architecture.mmd)
+[Architecture](diagrams/architecture.mmd)
