@@ -1,2 +1,14 @@
 architecture-beta
-  group data[Data Layer] --> model[Model Layer] --> serving[Serving Layer]
+    group data_layer[Data Layer]
+        ds[(Джерела даних)]
+        pp[Preprocessing]
+        fs[Feature Store]
+    group model_layer[Model Layer]
+        mt[Model Training]
+        mr[Model Registry]
+    group serving_layer[Serving Layer]
+        inf[Inference Engine]
+        api[API Gateway]
+    ds --> pp --> fs
+    fs --> mt --> mr
+    mr --> inf --> api
