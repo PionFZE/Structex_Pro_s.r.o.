@@ -17,3 +17,6 @@ graph TD
     C --> D[Training]
     D --> E[Registry]
     E --> F[Inference]
+
+##Architecture Diagram
+![Architecture](diagrams/architecture.mmd)
