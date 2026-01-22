@@ -12,11 +12,20 @@ Demonstration of Architecture and Engineering for AI Core Systems by Structex Pr
 ## Diagram (Mermaid)
 ```mermaid
 graph TD
-    A[Data Sources] --> B[Preprocessing]
-    B --> C[Feature Store]
-    C --> D[Training]
-    D --> E[Registry]
-    E --> F[Inference]
+    subgraph data_layer["Data Layer"]
+        ds[(Джерела даних)]
+        pp[Preprocessing]
+        fs[Feature Store]
+    end
+    subgraph model_layer["Model Layer"]
+        mt[Model Training]
+        mr[Model Registry]
+    end
+    subgraph serving_layer["Serving Layer"]
+        inf[Inference Engine]
+        api[API Gateway]
+    end
+    ds --> pp --> fs
+    fs --> mt --> mr
+    mr --> inf --> api
 
-##Architecture Diagram
-[Architecture](diagrams/architecture.mmd)
